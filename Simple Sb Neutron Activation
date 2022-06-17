@@ -18,7 +18,7 @@ c Lead Cylinder 1
 22 1 c/z 15 0 25
 c outside
 30 1 pz -15
-31 1 pz -45
+31 1 pz  45
 32 1 c/z 15 0 30
 c outside
 90 pz 0
