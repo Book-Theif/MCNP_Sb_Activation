@@ -1,10 +1,12 @@
 Simulation of radioactive xenon via neutron capture
-1 1 -6.691 1 -2 -3 $ Xenon gas 50mL - good
-2 2 -2.84 10 -11 -12 #1 $ Steel cylinders - good
-30 4 -0.001225 -30 31 -32 #1 #2 $ air space 1 - good
-99 0 30 -31 32 $ Outside world - good
+c Update the comments to match what youre simulating
+1 1 -6.691 1 -2 -3 $ Xenon gas 50mL
+2 2 -2.84 10 -11 -12 #1 $ Steel cylinders
+30 4 -0.001225 -30 31 -32 #1 #2 $ air space 1
+c check your surface orientation for cell 30
+99 0 30 -31 32 $ Outside world
 
-c Xenon volume
+c Xenon volume ? what is it really
 1 1 pz -0.02379
 2 1 pz 0.02379
 3 1 c/z 35 0 2
@@ -16,7 +18,7 @@ c Lead Cylinder 1
 20 1 pz -10
 21 1 pz 40
 22 1 c/z 15 0 25
-c outside
+c outside  ? what is it really
 30 1 pz -15
 31 1 pz  45
 32 1 c/z 15 0 30
@@ -49,10 +51,15 @@ m4  7014.70c  -0.7722  &
     1001.70c  -0.00137 &
     6000.70c  -0.0003  $ Air
     
+c You haven't defined a direction for the particles to go
+c Is it the default to go isotropic?
 sdef pos=0 0 0 erg=1e-4 
+c You need to have an si1 to go with the sp1
 sp1 0 9.70E-05 4.56E-04 4.45E-04 6.38E-04 2.61E-04 2.24E-04 2.86E-04 &
    3.03E-04 4.11E-04
+c You need to have an si2 to go with the sp2
 sp2 0 1
+c Why do you have these distributions, you don't use them anywhere
 f4:n (1)
 fm4 (-0.5721 11 102) (-0.4279 12 102)
 f14:n (2)
