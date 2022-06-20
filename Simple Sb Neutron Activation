@@ -1,47 +1,36 @@
-Simulation of radioactive xenon via neutron capture
-1 1 -6.691 1 -2 -3 $ Xenon gas 50mL - good
-2 2 -2.84 10 -11 -12 #1 $ Steel cylinders - good
-30 4 -0.001225 -30 31 -32 #1 #2 $ air space 1 - good
-99 0 30 -31 32 $ Outside world - good
+c Simulation of radioactive xenon via neutron capture
+1 1 -6.691 -3 $ Anitmony 1 gram - good
+2 2 -2.84 10 -11 -12 #1 $ Aluminum cylinder - good  
+3 4 -0.001225 -22 #1 #2 $ air space 1 - good
+4 3 -2.34 -32 #1 #2 #3 $ boron - good
+99 0 32 $ Outside world - good
 
-c Xenon volume
-1 1 pz -0.02379
-2 1 pz 0.02379
-3 1 c/z 35 0 2
+c Antimony volume
+3 1 s 5 0 0 0.22826
 c Cylinders
-10 1 pz -0.4
-11 1 pz 0.4
-12 1 c/z 35 0 3.4
-c Lead Cylinder 1
-20 1 pz -10
-21 1 pz 40
-22 1 c/z 15 0 25
+10 1 pz -0.8
+11 1 pz 0.8
+12 1 c/z 5 0 3.4
+c Boron Sphere 1
+22 1 s 15 0 0 30
 c outside
-30 1 pz -15
-31 1 pz  45
-32 1 c/z 15 0 30
-c outside
-90 pz 0
-91 cz 17.78
-92 pz 109.22
+32 s 15 0 0 35
 
 mode n
 imp:n 1 2r 0
 tr1 0 0 0 
 m1  51121.19c 0.5721 & 
-    51123.19c 0.4279
+    51123.19c 0.4279 $Antimony
 m11 51121.19c 1
 m12 51123.19c 1
 m2  13027.19c 0.934 &
     29063.19c 0.0203478 &
-    29065.19c 0.0456522
+    29065.19c 0.0456522 $Aluminum
 m20 13027.19c 1
 m21 29063.19c 1
 m22 29065.19c 1
-m3  82204.19c 0.014 &
-    82206.19c 0.241 &
-    82207.19c 0.221 &
-    82208.19c 0.524
+m3  510.19c 0.1965 &
+    511.19c 0.8035 $ Boron
 m4  7014.70c  -0.7722  &
     7015.70c  -0.0028  &
     8016.70c  -0.21053 & 
@@ -49,10 +38,7 @@ m4  7014.70c  -0.7722  &
     1001.70c  -0.00137 &
     6000.70c  -0.0003  $ Air
     
-sdef pos=0 0 0 erg=1e-4 
-sp1 0 9.70E-05 4.56E-04 4.45E-04 6.38E-04 2.61E-04 2.24E-04 2.86E-04 &
-   3.03E-04 4.11E-04
-sp2 0 1
+sdef pos=25 0 0 erg=1e-4 dir=d1 axs= -1 0 0
 f4:n (1)
 fm4 (-0.5721 11 102) (-0.4279 12 102)
 f14:n (2)
