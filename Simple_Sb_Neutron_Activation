@@ -1,8 +1,9 @@
 c Simulation of radioactive xenon via neutron capture
 1 1 -6.691 -3 $ Antimony 1 gram - good
 2 2 -2.84 10 -11 -12 #1 $ Aluminum cylinder - good  
-3 4 -0.001225 -22 #1 #2 $ air space 1 - good
+3 4 -0.001225 -22 #1 #2 #5 $ air space 1 - good
 4 3 -2.34 -32 #1 #2 #3 $ boron - good
+5 0 -13 $ Neutron Sphere
 99 0 32 $ Outside world - good
 
 c Antimony volume
@@ -40,7 +41,7 @@ m4  7014.70c  -0.7722  &
     1001.70c  -0.00137 &
     6000.70c  -0.0003  $ Air
     
-sdef pos=0 0 0 erg=2.45 cel=13
+sdef pos=0 0 0 erg=2.45 cel=5
 f4:n (1)
 fm4 (-0.5721 11 102) (-0.4279 12 102)
 f14:n (2)
