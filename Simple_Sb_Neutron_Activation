@@ -13,7 +13,7 @@ c Antimony volume
 c Cylinders
 10 1 pz -0.8
 11 1 pz 0.8
-12 1 c/z 25 0 3.4
+12 1 c/z 25 0 1.7
 c Neutron Sphere
 13 1 s 0 0 0 .1
 c Boron Sphere 1
