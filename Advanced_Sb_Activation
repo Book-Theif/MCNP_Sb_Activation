@@ -1,18 +1,18 @@
 c Simulation of radioactive xenon via neutron capture
 1 1 -6.691 1 -2 -3 $ Antimony 1 gram - good
 2 2 -2.84 10 -11 -12 #1 $ Aluminum cylinder - good  
-3 6 -0.001225 -20 21 -22 23 -24 25 #1 #2 #6 $ air space - good
+3 6 -0.001225 -20 21 -22 23 -24 25 #6 $ air space - good
 4 3 -1.04 -30 31 -32 33 -34 35 #3 #1 #2 #6 #7 #8 $borated polyethylene
 5 4 -0.95 -40 41 -42 43 -44 45 #1 #2 #3 #4 #6 #7 #8 $high density polyethylene
 6 0 -13 $ Neutron Sphere
-7 6 -0.001225 -16 -44 24 $ Air inside the beam
+7 6 -0.001225 -16 -44 24 $ #1 #2 Air inside the beam
 8 5 -1.44 16 -17 -44 24 $ #7 PVC Beam
 99 0 40 -41 42 -43 44 -45 $ Outside world - good
 
 c Antimony volume
 1 1 pz -0.181171
 2 1 pz 0.181171
-3 1 c/z 25 0 0.36234
+3 1 c/z 50 0 0.36234
 c Cylinders
 10 1 pz -0.8
 11 1 pz 0.8
