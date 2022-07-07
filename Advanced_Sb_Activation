@@ -16,35 +16,35 @@ c Antimony volume
 c Cylinders
 10 1 pz -0.8
 11 1 pz 0.8
-12 1 c/z 25 0 3.4
+12 1 c/z 5.21 0 1.7
 c Neutron Sphere
 13 1 s 0 0 0 .1
 c PVC Pipe
-14 1 pz 40
-15 1 pz 30
-16 1 c/z 35 0 1.905 
-17 1 c/z 35 0 2.667
+14 1 pz 8.07
+15 1 pz 2.35
+16 1 c/z 5.21 0 1.905 
+17 1 c/z 5.21 0 2.667
 c Borated Polyethylene
-20 1 pz 30
-21 1 pz -30
-22 1 py 30
-23 1 py -30
-24 1 px 30
-25 1 px -30
+20 1 pz 30.5
+21 1 pz -30.5
+22 1 py 15.35
+23 1 py -15.35
+24 1 px 23.5
+25 1 px -23.5
 c High Density Polyethylene
-30 1 pz 35
-31 1 pz -35
-32 1 py 35
-33 1 py -35
-34 1 px 35
-35 1 px -35
+30 1 pz 56.5
+31 1 pz -56.5
+32 1 py 25.35
+33 1 py -25.35
+34 1 px 53.5
+35 1 px -45.5
 c outside
-40 pz 40
-41 pz -40
-42 py 40
-43 py -40
-44 px 40
-45 px -40
+40 pz 74.3
+41 pz -74.3
+42 py 36.75
+43 py -36.75
+44 px 76.5
+45 px -72.5
 
 mode n
 imp:n 1 1r 0 2r
