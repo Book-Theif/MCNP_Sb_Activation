@@ -5,8 +5,8 @@ c Simulation of radioactive xenon via neutron capture
 4 3 -1.04 -30 31 -32 33 -34 35 #3 #1 #2 #6 #7 #8 $borated polyethylene
 5 4 -0.95 -40 41 -42 43 -44 45 #1 #2 #3 #4 #6 #7 #8 $high density polyethylene
 6 0 -13 $ Neutron Sphere
-7 6 -0.001225 -16 15 -14 $ Air inside the beam
-8 5 -1.44 16 -17 15 -14 $ PVC Beam
+7 6 -0.001225 -16 -44 24 $ Air inside the beam
+8 5 -1.44 16 -17 44 -24 $ PVC Beam
 99 0 40 -41 42 -43 44 -45 $ Outside world - good
 
 c Antimony volume
@@ -16,14 +16,12 @@ c Antimony volume
 c Cylinders
 10 1 pz -0.8
 11 1 pz 0.8
-12 1 c/z 5.21 0 1.7
+12 1 c/z 50 0 1.7
 c Neutron Sphere
 13 1 s 0 0 0 .1
 c PVC Pipe
-14 1 pz 8.07
-15 1 pz 2.35
-16 1 c/z 5.21 0 1.905 
-17 1 c/z 5.21 0 2.667
+16 1 c/x 50 0 1.905 
+17 1 c/x 50 0 2.667
 c Borated Polyethylene
 20 1 pz 30.5
 21 1 pz -30.5
