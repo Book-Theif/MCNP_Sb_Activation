@@ -12,11 +12,11 @@ c Simulation of radioactive xenon via neutron capture
 c Antimony volume
 1 1 pz -0.181171
 2 1 pz 0.181171
-3 1 c/z 23.5 0 0.36234
+3 1 c/z 26.5 0 0.36234
 c Cylinders
 10 1 pz -0.8
 11 1 pz 0.8
-12 1 c/z 23.5 0 1.7
+12 1 c/z 26.5 0 1.7
 c Neutron Sphere
 13 1 s 0 0 0 .1
 c PVC Pipe
