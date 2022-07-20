@@ -3,11 +3,11 @@ c Simulation of radioactive xenon via neutron capture
 2 2 -2.84 10 -11 -12 #1 $ Aluminum cylinder - good  
 3 6 -0.001225 -20 21 -22 23 -24 25 #6 $ air space - good
 4 3 -1.04 -30 31 -32 33 -34 35 #3 #1 #2 #6 #7 #8 $borated polyethylene
-5 4 -0.95 -40: 41: -42: 43: -44: 45 #1 #2 #3 #4 #6 #7 #8 $high density polyethylene
+5 4 -0.95 -40 41 -42 43 -44 45 #1 #2 #3 #4 #6 #7 #8 $high density polyethylene
 6 0 -13 $ Neutron Sphere
 7 6 -0.001225 -16 -44 24 #1 #2 $ Air inside the beam
 8 5 -1.44 16 -17 -44 24 #7 $ PVC Beam
-99 0 40 -41 42 -43 44 -45 $ Outside world - good
+99 0 40:-41:42:-43:44:-45 $ Outside world - good
 
 c Antimony volume
 1 1 pz -0.181171
